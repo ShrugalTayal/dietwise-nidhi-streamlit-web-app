@@ -1,10 +1,12 @@
 **README: NutriWise-Nidhi**
 
-### Prerequisites
+## Prerequisites
 
 Before you begin, make sure you have the following installed:
 
 - Python: Make sure you have Python installed on your system. You can download it from the official website: https://www.python.org/downloads/
+
+## Maintaining Dependencies
 
 ### Installing `pipreqs`
 This section provides instructions on how to maintain dependencies for your project using the `pipreqs` tool. 
@@ -62,3 +64,71 @@ pipreqs --encoding=utf8
 Maintaining project dependencies is essential for ensuring the stability and functionality of your project. By following the steps outlined in this README, you can easily generate and update the `requirements.txt` file to keep track of your project's dependencies.
 
 Remember to regularly review and update your dependencies to ensure that your project remains up-to-date and secure.
+
+## Git Setup
+
+This section provides a simple guide on setting up a Git repository for your project. Follow these steps to initialize a Git repository, add your project files, and push them to a remote GitHub repository.
+
+### Prerequisites
+
+Before you begin, make sure you have the following:
+
+- Git installed: Download and install Git from the official website: https://git-scm.com/downloads
+- Python: Ensure that Python is installed on your system. You can download it from: https://www.python.org/downloads/
+- GitHub account: Create a GitHub account if you don't have one: https://github.com/
+
+### Step-by-Step Guide
+
+1. **Generate Requirements File**:
+
+    Before setting up your Git repository, it's a good practice to generate a `requirements.txt` file to track project dependencies. You can use the `pipreqs` tool for this purpose:
+
+    ```bash
+    pipreqs --encoding=utf8
+    ```
+
+2. **Initialize Git Repository**:
+
+    Open a terminal or command prompt and navigate to your project's root directory. Run the following commands to initialize a Git repository:
+
+    ```bash
+    git init
+    ```
+
+3. **Add Project Files**:
+
+    Add all your project files to the Git repository using the following command:
+
+    ```bash
+    git add .
+    ```
+
+4. **Commit Changes**:
+
+    Commit the added files to the repository with a meaningful comment. Replace `<insert comments>` with a brief description of your changes:
+
+    ```bash
+    git commit -m "<insert comments>"
+    ```
+
+5. **Link to Remote Repository**:
+
+    Create a remote repository on GitHub. Replace `<UserName>` with your GitHub username and `<repo-name>` with the name of your repository.
+
+    ```bash
+    git remote add origin https://github.com/<UserName>/<repo-name>.git
+    ```
+
+6. **Push to GitHub**:
+
+    Push your committed changes to the remote repository on GitHub. This command will set the default remote branch to `master`.
+
+    ```bash
+    git push -u origin master
+    ```
+
+### Conclusion
+
+Congratulations! You've successfully set up a Git repository for your project and pushed your files to a remote GitHub repository. From now on, you can continue to add, modify, and commit your project files, and then push those changes to GitHub to collaborate with others or to keep your work organized.
+
+Remember to regularly update your repository by committing and pushing changes as your project progresses. If you need further assistance with Git commands or GitHub features, refer to their documentation or online resources.
