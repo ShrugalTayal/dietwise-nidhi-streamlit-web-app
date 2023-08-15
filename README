@@ -1,0 +1,64 @@
+**README: NutriWise-Nidhi**
+
+### Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+- Python: Make sure you have Python installed on your system. You can download it from the official website: https://www.python.org/downloads/
+
+### Installing `pipreqs`
+This section provides instructions on how to maintain dependencies for your project using the `pipreqs` tool. 
+
+To generate a list of dependencies for your project, you can use the `pipreqs` tool. This tool scans your project's source code and creates a `requirements.txt` file containing the list of dependencies required by your project.
+
+To install `pipreqs`, open a terminal or command prompt and run the following command:
+
+```bash
+pip install pipreqs
+```
+
+### Generating and Updating Dependencies
+
+1. Navigate to the root directory of your project using the terminal.
+
+2. Run the following command to generate/update the `requirements.txt` file:
+
+```bash
+pipreqs .
+```
+
+This command scans the current directory and its subdirectories for import statements in your Python source code and generates a `requirements.txt` file with the detected dependencies.
+
+3. Review the generated `requirements.txt` file to ensure that it includes all the necessary dependencies for your project.
+
+### Installing Dependencies
+
+To install the dependencies listed in the `requirements.txt` file, you can use the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+This command will install all the required packages specified in the `requirements.txt` file.
+
+### Updating Dependencies
+
+As your project evolves, you might need to add new dependencies or update existing ones. To update the `requirements.txt` file, you can follow these steps:
+
+1. Install or update the required packages using `pip`:
+
+```bash
+pip install package-name
+```
+
+2. After installing or updating packages, regenerate the `requirements.txt` file using `pipreqs`:
+
+```bash
+pipreqs --encoding=utf8
+```
+
+### Conclusion
+
+Maintaining project dependencies is essential for ensuring the stability and functionality of your project. By following the steps outlined in this README, you can easily generate and update the `requirements.txt` file to keep track of your project's dependencies.
+
+Remember to regularly review and update your dependencies to ensure that your project remains up-to-date and secure.
